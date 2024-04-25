@@ -5,4 +5,6 @@ board = Board.new
 board.show
 
 game = Game.new
-game.require_input
+ret = game.require_input
+board.update_board(ret)
+board.show

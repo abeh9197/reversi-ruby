@@ -7,16 +7,22 @@ class Board
     set_initial_value
   end
 
+  def show
+    @value.each do |row|
+      puts row.join(' ')
+    end
+  end
+
+  def update_board(input)
+    puts input
+    @value[input[0]][input[1]] = 3
+  end
+
+  private
   def set_initial_value
     @value[3][3] = 1
     @value[4][4] = 1
     @value[3][4] = 2
     @value[4][3] = 2
-  end
-
-  def show
-    @value.each do |row|
-      puts row.join(' ')
-    end
   end
 end
