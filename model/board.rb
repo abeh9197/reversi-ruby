@@ -9,9 +9,9 @@ class Board
     set_initial_value
   end
 
-  def update_board(input)
+  def update_board(input, game)
     puts input
-    @value[input[0]][input[1]] = 3
+    @value[input[0]][input[1]] = game.turn
   end
 
   private
