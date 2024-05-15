@@ -14,5 +14,6 @@ while i < 10 do
 
     ret = game_controller.require_input
     board.update_board(ret, game)
+    game.switch_turn
     i = i + 1
 end
