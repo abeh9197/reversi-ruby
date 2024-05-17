@@ -14,6 +14,15 @@ class Board
     @value[input[0]][input[1]] = game.turn
   end
 
+  def valid_moves(game)
+    moves = []
+    @value.each_with_index do |row, y|
+      row.each_with_index do |cell, x|
+        moves << [y, x] if cell.value == 0
+    end
+    moves
+  end
+
   private
 
   def set_initial_value
