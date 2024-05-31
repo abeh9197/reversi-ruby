@@ -14,11 +14,12 @@ class Board
     @value[input[0]][input[1]] = game.turn
   end
 
-  def valid_moves(game)
+  def valid_moves(board, game)
     moves = []
     @value.each_with_index do |row, y|
       row.each_with_index do |cell, x|
-        moves << [y, x] if cell.value == 0
+        moves << [y, x] if cell.empty? && can_flank?(y, x, game.turn)
+      end
     end
     moves
   end
