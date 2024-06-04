@@ -12,6 +12,7 @@ i = 0
 while i < 10 do
     board_view.show(board)
 
+    board.valid_moves(game)
     ret = game_controller.require_input
     board.update_board(ret, game)
     game.switch_turn

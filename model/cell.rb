@@ -10,4 +10,8 @@ class Cell
   def to_s
     @value.to_s
   end
+
+  def empty?
+    @value.zero?
+  end
 end

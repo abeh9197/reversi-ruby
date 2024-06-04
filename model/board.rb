@@ -27,10 +27,10 @@ class Board
   private
 
   def set_initial_value
-    @value[3][3] = 1
-    @value[4][4] = 1
-    @value[3][4] = 2
-    @value[4][3] = 2
+    @value[3][3].value = 1
+    @value[4][4].value = 1
+    @value[3][4].value = 2
+    @value[4][3].value = 2
   end
 
   def can_flank?(y, x, turn)
