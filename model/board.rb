@@ -10,8 +10,8 @@ class Board
   end
 
   def update_board(input, game)
-    puts input
-    @value[input[0]][input[1]] = game.turn
+    row, col = input
+    @value[row][col].value = game.turn
   end
 
   def valid_moves(game)
