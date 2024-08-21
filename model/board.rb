@@ -28,6 +28,7 @@ class Board
 
 
 # コメント1
+# コメント2
 
   def set_initial_value
     @value[3][3].value = -1
