@@ -26,9 +26,8 @@ class Board
 
   private
 
-
-# コメント1
-# コメント2
+# コミット1
+# コミット2
 
   def set_initial_value
     @value[3][3].value = -1
